@@ -1,5 +1,16 @@
+body {
+  /* background-color: #131617; */
+  background-color: #22596B;
+}
+
 .App {
   text-align: center;
+}
+
+.App .section {
+  clear: both;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 }
 
 .App-logo {
