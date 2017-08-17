@@ -21,20 +21,12 @@ body {
 .App-header {
   background-color: #222;
   height: 0px;
-  /* height: 20px; */
-  /* padding: 20px; */
   color: white;
 }
 
 .App-intro {
   font-size: large;
 }
-
-/* @keyframes App-logo-spin { */
-/*   from { transform: rotate(0deg); } */
-/*   to { transform: rotate(360deg); } */
-/* } */
-
 
 #title-container {
     /* margin-top: 8%; */

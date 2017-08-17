@@ -1,0 +1,4 @@
+.card-media:hover {
+  height: 200px;
+  transitionDuration: 0.3s;
+}
