@@ -5,8 +5,9 @@
 }
 
 .nav-tabs {
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
+  width: 100%;
+  /* position: fixed; */
+  /* margin-bottom: 48px; */
 }
 
 .nav-tab {

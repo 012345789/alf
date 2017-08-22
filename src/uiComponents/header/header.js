@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './header.css';
 
 import {Tabs, Tab} from 'material-ui';
@@ -7,7 +7,7 @@ injectTapEventPlugin();
 
 const Header = () => {
   return (
-    <div>
+    <div id="header">
       <Tabs className="nav-tabs">
         <Tab className="nav-tab" label="About"/>
         <Tab className="nav-tab" label="Sponsors"/>

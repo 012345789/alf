@@ -1,40 +1,65 @@
 import React, { Component } from 'react';
-import {Card, CardMedia, CardTitle, CardText, Dialog} from 'material-ui';
+import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
 import cardImg1 from '../../img/ALF-14-29.jpg';
-// import './cards.css';
+import './modals.css';
 
-// const Card1 = () => {
+
 class Card1 extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.props.toggleModal('card1');
   }
 
   render() {
 
     let overlay = (
-        <CardTitle title="Overlay title" subtitle="Imagine yourself immersed in acres of lush gardens illuminated with mesmerizing, larger-than-life art and lighting installations created by Bay Area artists.">
-        </CardTitle>
+      <CardTitle title="What is it?" subtitle="Imagine yourself immersed in acres of lush gardens illuminated with mesmerizing art and lighting installations created by Bay Area artists.">
+      </CardTitle>
     );
-    // let isModalOpen = false;
-    let toggleModal = () => {
-      console.log('toggled')
-      // isModalOpen = !isModalOpen;
-      console.log(this.state);
+
+    let modalStyles = {
+      width: '90%',
+      maxWidth: 'none',
+      textAlign: 'center',
     };
 
-    return (
-      <Card className="card" onClick={toggleModal}>
-        <CardMedia className="card-media" overlay={ overlay }>
-          <img src={ cardImg1 } alt=""/>
-        </CardMedia>
+
+    let modal = (
+      <div className="modal">
         <Dialog
-          title="Modal"
-          open={this.state === 'card1'}
-          onRequestClose={toggleModal}
+          title="The Autumn Lights Festival is..."
+          open={this.props.state.modal === 'card1'}
+          onRequestClose={this.handleClick}
+          contentStyle={modalStyles}
         >
-          Modal Content
+          <img className="modal-pic" src={ cardImg1 } alt="Artist Crafted Mushroom Lights"/>
+          {
+              // <img className="modal-pic" src={ modalImg2 } alt="Participants Standing In Awe"/>
+  }
+          <p>
+            The festive evenings blend live music, art, fire dancers, food and libations to make one unforgettable experience. This wildly popular annual tradition benefiting the Gardens at Lake Merritt is easy to get to and fun for all ages. Tickets are expected to sell out so be sure to check back on September 1 for more details!
+          </p>
+
+          <p>
+            The Autumn Lights Festival, which has become a unique Oakland tradition, expands this year to a festive four-night community event held in the seven-acre oasis of themed gardens nestled in Lakeside Park surrounding Lake Merritt.
+          </p>
         </Dialog>
-      </Card>
+      </div>
+    );
+
+    return (
+      <div>
+        <Card className="card" onClick={this.handleClick}>
+          <CardMedia className="card-media" overlay={ overlay }>
+            <img src={ cardImg1 } alt="Artist Crafted Mushroom Lights"/>
+          </CardMedia>
+          { modal }
+        </Card>
+      </div>
     );
   }
 }
