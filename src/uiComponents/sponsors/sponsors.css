@@ -2,13 +2,35 @@
   background-color: white;
 }
 
+.sponsor {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.sponsor-content-container {
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.sponsor-content-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
 .sponsor-logo {
-  /* height: 128px; */
   width: 128px;
   height: auto;
+  display: inline-block;
+}
+
+.sponsor-logo-parent-extension {
+  clear: both;
 }
 
 .sponsors-row {
   clear: both;
-  display: inline-block;
+  display: inline-flex;
 }

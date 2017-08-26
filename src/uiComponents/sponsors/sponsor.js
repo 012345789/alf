@@ -8,11 +8,14 @@ class Sponsor extends Component {
 
   render() {
     return (
-      <div className="">
+      <div className="sponsor">
         <h4>
           {this.props.name}
         </h4>
-        <img className="sponsor-logo" src={this.props.img} />
+        <div className="sponsor-content-container">
+          <img className="sponsor-logo" src={this.props.img} />
+          <br className="sponsor-logo-parent-extension" />
+        </div>
       </div>
     );
   }
