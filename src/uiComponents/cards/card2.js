@@ -17,7 +17,7 @@ class Card2 extends Component {
   render() {
 
     let overlay = (
-        <CardTitle title="Where is it?" subtitle="Easily accessible in the heart of Oakland's pride, Lake Merritt, which is bustling with wildlife and fosters a culture-focused community.">
+        <CardTitle title="Where/When is it?" subtitle="Easily accessible in the heart of Oakland's pride, Lake Merritt, which is bustling with wildlife and fosters a culture-focused community.">
         </CardTitle>
     );
 
@@ -41,7 +41,10 @@ class Card2 extends Component {
             The festival takes place at the Gardens of Lake Merritt every year.
           </p>
           <p>
-            This year's festival will take place from October 5 through October 10, every night from 6 pm until 11 pm.
+            You can join us for the festivities at 666 Bellevue Ave. Oakland, 94610.
+          </p>
+          <p>
+            This year's festival will take place from October 19th through October 21st, every night from 6 pm until 11 pm.
           </p>
         </Dialog>
       </div>

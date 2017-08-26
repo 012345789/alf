@@ -32,9 +32,10 @@ body {
     text-transform: uppercase;
     float: left;
     width: 85%;
-    /* display: block; */
 }
 
-.App .sections {
-
+.App .section {
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }

@@ -1,0 +1,14 @@
+.sponsors {
+  background-color: white;
+}
+
+.sponsor-logo {
+  /* height: 128px; */
+  width: 128px;
+  height: auto;
+}
+
+.sponsors-row {
+  clear: both;
+  display: inline-block;
+}

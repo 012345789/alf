@@ -7,7 +7,8 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import CardsController from './uiComponents/controllers/cardsController.js';
-
+import Sponsors from './uiComponents/sponsors/sponsors.js';
+import Tickets from './uiComponents/tickets/tickets.js';
 
 class App extends Component {
 
@@ -23,10 +24,12 @@ class App extends Component {
         </AlfIntro>
 
         <div id="sections">
+
           <CardsController/>
 
-          <div className="section">
-          </div>
+          <Tickets/>
+
+          <Sponsors/>
 
         </div>
 

@@ -10,6 +10,7 @@ const Header = () => {
     <div id="header">
       <Tabs className="nav-tabs">
         <Tab className="nav-tab" label="About"/>
+        <Tab className="nav-tab" label="Tickets"/>
         <Tab className="nav-tab" label="Sponsors"/>
       </Tabs>
     </div>
