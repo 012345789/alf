@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
-import cardImg1 from '../../img/ALF-14-29.jpg';
 import './modals.css';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import cardImg1 from '../../img/ALF-14-29.jpg';
 
 
 class Card1 extends Component {
@@ -52,14 +55,16 @@ class Card1 extends Component {
     );
 
     return (
-      <div>
-        <Card className="card" onClick={this.handleClick}>
-          <CardMedia className="card-media" overlay={ overlay }>
-            <img src={ cardImg1 } alt="Artist Crafted Mushroom Lights"/>
-          </CardMedia>
-          { modal }
-        </Card>
-      </div>
+      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+        <div>
+          <Card className="card" onClick={this.handleClick}>
+            <CardMedia className="card-media" overlay={ overlay }>
+              <img src={ cardImg1 } alt="Artist Crafted Mushroom Lights"/>
+            </CardMedia>
+            { modal }
+          </Card>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }

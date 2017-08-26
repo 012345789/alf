@@ -1,19 +1,32 @@
 .sponsors {
   background-color: white;
+  text-align: center;
+}
+
+.sponsors-container {
+  text-align: center;
 }
 
 .sponsor {
-  padding-left: 2em;
-  padding-right: 2em;
+  /* padding-left: 2em; */
+  /* padding-right: 2em; */
+  padding: 2em;
 }
 
-.sponsor-content-container {
+.sponsor-name {
+  height: 15%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+
+.sponsor-logo-container {
   height: 100%;
   vertical-align: middle;
   text-align: center;
 }
 
-.sponsor-content-container:before {
+.sponsor-logo-container:before {
   content: '';
   display: inline-block;
   height: 100%;
@@ -31,6 +44,12 @@
 }
 
 .sponsors-row {
+  /* text-align: center; */
   clear: both;
   display: inline-flex;
 }
+
+.one-sponsor {
+  display: block;
+}
+

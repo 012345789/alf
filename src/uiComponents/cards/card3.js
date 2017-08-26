@@ -4,7 +4,7 @@ import './modals.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import cardImg2 from '../../img/ALF-14-7.jpg';
+import cardImg from '../../img/ALF-14-2.jpg';
 
 
 class Card2 extends Component {
@@ -14,13 +14,13 @@ class Card2 extends Component {
   }
 
   handleClick() {
-    this.props.toggleModal('card2');
+    this.props.toggleModal('card3');
   }
 
   render() {
 
     let overlay = (
-        <CardTitle title="Where/When is it?" subtitle="Easily accessible in the heart of Oakland's pride, Lake Merritt, which is bustling with wildlife and fosters a culture-focused community.">
+        <CardTitle title="What should I know before going?" subtitle="The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.">
         </CardTitle>
     );
 
@@ -34,21 +34,25 @@ class Card2 extends Component {
     let modal = (
       <div className="modal">
         <Dialog
-          title="Autumn Lights Festival is happening in..."
-          open={this.props.state.modal === 'card2'}
+          title="Frequently Asked Questions"
+          open={this.props.state.modal === 'card3'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
         >
-          <img className="modal-pic" src={ cardImg2 } alt="Autumn Lights Medley"/>
-          <p>
-            The festival takes place at the Gardens of Lake Merritt every year.
-          </p>
-          <p>
-            Join us for the festivities at 666 Bellevue Ave. Oakland, 94610!
-          </p>
-          <p>
-            This year's festival will take place from October 19th through October 21st, every night from 6 pm until 11 pm.
-          </p>
+          <div className="modal-pic-container">
+            <img className="modal-side-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+          </div>
+          <div className="modal-content-container">
+            <p>
+              Here's my question?
+            </p>
+            <p>
+              Here's the answer.
+            </p>
+            <p>
+              This year's festival will take place from October 19th through October 21st, every night from 6 pm until 11 pm.
+            </p>
+          </div>
         </Dialog>
       </div>
     );
@@ -57,7 +61,7 @@ class Card2 extends Component {
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <Card className="card" onClick={this.handleClick}>
           <CardMedia className="card-media" overlay={ overlay }>
-            <img src={ cardImg2 } alt=""/>
+            <img src={ cardImg } alt=""/>
           </CardMedia>
           { modal }
         </Card>

@@ -2,3 +2,13 @@
   width: 45%;
   height: 45%;
 }
+
+.modal-side-pic {
+  width: 25%;
+  height: auto;
+}
+
+.modal-side-content {
+  width: 75%;
+
+}

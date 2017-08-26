@@ -6,3 +6,11 @@
   margin-left: 7.5%;
   margin-bottom: 2.5%;
 }
+
+.vertical-cards {
+  display: inline-flex;
+}
+
+.vertical-card {
+  width: 45.7%;
+}

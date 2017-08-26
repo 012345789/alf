@@ -3,9 +3,6 @@ import './App.css';
 
 import Header from './uiComponents/header/header.js';
 import AlfIntro from './uiComponents/alfIntro/alfIntro.js';
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import CardsController from './uiComponents/controllers/cardsController.js';
 import Sponsors from './uiComponents/sponsors/sponsors.js';
 import Tickets from './uiComponents/tickets/tickets.js';
@@ -16,12 +13,9 @@ class App extends Component {
     return (
       <div className="App">
 
-        <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-          <Header/>
-        </MuiThemeProvider>
+        <Header/>
 
-        <AlfIntro>
-        </AlfIntro>
+        <AlfIntro/>
 
         <div id="sections">
 

@@ -19,20 +19,20 @@ class Sponsors extends Component {
         <h2>
           Sponsors
         </h2>
-        <div className="sponsors-row">
-          <Sponsor name="Oakland A's" img={oaklandAsLogo} />
-          <Sponsor name="Niantic Labs" img={nianticLogo} />
-          <Sponsor name="City of Oakland" img={cityOfOaklandLogo} />
-        </div>
-        <div className="sponsors-row">
-          <Sponsor name="East Bay Express" img={eastBayExpressLogo} />
-          <Sponsor name="Oakland Magazine" img={oaklandMagazineLogo} />
-          <Sponsor name="Oakland A's" img={oaklandAsLogo} />
-        </div>
-        <div className="sponsors-row">
-          <Sponsor name="" img="" />
-          <Sponsor name="Friends of the Gardens at Lake Merritt" img={friendsLogo} />
-          <Sponsor name="" img="" />
+        <div className="sponsors-container">
+          <div className="sponsors-row">
+            <Sponsor name="Oakland A's" img={oaklandAsLogo} />
+            <Sponsor name="Niantic Labs" img={nianticLogo} />
+            <Sponsor name="City of Oakland" img={cityOfOaklandLogo} />
+          </div>
+          <div className="sponsors-row">
+            <Sponsor name="Oakland Magazine" img={oaklandMagazineLogo} />
+            <Sponsor name="Oakland A's" img={oaklandAsLogo} />
+            <Sponsor name="East Bay Express" img={eastBayExpressLogo} />
+          </div>
+          <div className="sponsors-row one-sponsor">
+            <Sponsor name="Friends of the Gardens at Lake Merritt" img={friendsLogo} className="single-row"/>
+          </div>
         </div>
       </div>
     );
@@ -40,12 +40,3 @@ class Sponsors extends Component {
 }
 
 export default Sponsors;
-
-{
-  // <div className="">
-  //   <h4>
-  //     Oakland A's
-  //   </h4>
-  //   <img src={oaklandAs} />
-  // </div>
-}

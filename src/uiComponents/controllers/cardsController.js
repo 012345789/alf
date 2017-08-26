@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import '../cards/cards.css';
 import Card1 from '../cards/card1.js';
 import Card2 from '../cards/card2.js';
+import Card3 from '../cards/card3.js';
+import Card4 from '../cards/card4.js';
 
 class CardsController extends Component {
   constructor(props) {
@@ -22,16 +21,22 @@ class CardsController extends Component {
     return (
       <div className="section">
         <div className="card">
-          <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-            <Card1 toggleModal={this.toggleModal} state={this.state}>
-            </Card1>
-          </MuiThemeProvider>
+          <Card1 toggleModal={this.toggleModal} state={this.state}>
+          </Card1>
         </div>
         <div className="card">
-          <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-            <Card2 toggleModal={this.toggleModal} state={this.state}>
-            </Card2>
-          </MuiThemeProvider>
+          <Card2 toggleModal={this.toggleModal} state={this.state}>
+          </Card2>
+        </div>
+        <div className="card vertical-cards">
+          <div className="vertical-card">
+            <Card3 toggleModal={this.toggleModal} state={this.state}>
+            </Card3>
+          </div>
+          <div className="vertical-card">
+            <Card4 toggleModal={this.toggleModal} state={this.state}>
+            </Card4>
+          </div>
         </div>
       </div>
     );
