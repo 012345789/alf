@@ -9,8 +9,29 @@
 
 .vertical-cards {
   display: inline-flex;
+  /* height: 27em !important; */
 }
 
 .vertical-card {
   width: 45.7%;
+  /* height: 474px !important; */
+  /* overflow: hidden; */
+  /* height: 100%; */
+  /* margin-left: 1em; */
+  /* margin-right: 1em; */
+  left: 1em;
+}
+
+.vertical-card-image {
+  /* max-height: 474px; */
+}
+
+.card-media {
+  /* height: 100% !important; */
+}
+
+.card-element {
+  /* height: 100% !important; */
+  margin-left: 1em;
+  margin-right: 1em;
 }

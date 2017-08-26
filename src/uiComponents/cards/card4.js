@@ -20,7 +20,7 @@ class Card4 extends Component {
   render() {
 
     let overlay = (
-        <CardTitle title="What should I know before going?" subtitle="The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.">
+        <CardTitle title="I'm stoked! How can I buy tickets?" subtitle="Last year's ticketing system was a huge success. We're proud to announce that guests can expect a great ticketing experience again this year.">
         </CardTitle>
     );
 
@@ -29,7 +29,6 @@ class Card4 extends Component {
       maxWidth: 'none',
       textAlign: 'center',
     };
-
 
     let modal = (
       <div className="modal">
@@ -51,7 +50,7 @@ class Card4 extends Component {
             </p>
           </div>
           <div className="modal-pic-container">
-            <img className="modal-side-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+            <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
           </div>
         </Dialog>
       </div>
@@ -59,9 +58,9 @@ class Card4 extends Component {
 
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-        <Card className="card" onClick={this.handleClick}>
+        <Card className="card-element" onClick={this.handleClick}>
           <CardMedia className="card-media" overlay={ overlay }>
-            <img src={ cardImg } alt=""/>
+            <img src={ cardImg } alt="" className="vertical-card-image" />
           </CardMedia>
           { modal }
         </Card>

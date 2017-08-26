@@ -3,12 +3,21 @@
   height: 45%;
 }
 
-.modal-side-pic {
-  width: 25%;
+/* .modal-side-pic { */
+/*   width: 25%; */
+/*   height: auto; */
+/* } */
+
+.modal-content-container {
+  width: 70%;
+}
+
+.modal-pic-container {
+  max-width: 20%;
   height: auto;
 }
 
-.modal-side-content {
-  width: 75%;
-
+.modal-vertical-pic {
+  height: 100%;
+  width: 100%;
 }

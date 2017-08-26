@@ -4,10 +4,10 @@ import './modals.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import cardImg from '../../img/ALF-14-2.jpg';
+import cardImg from '../../img/ALF-14-2-crop.jpg';
 
 
-class Card2 extends Component {
+class Card3 extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -20,7 +20,7 @@ class Card2 extends Component {
   render() {
 
     let overlay = (
-        <CardTitle title="What should I know before going?" subtitle="The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.">
+        <CardTitle title="What should I know beforehand?" subtitle="The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.">
         </CardTitle>
     );
 
@@ -40,7 +40,7 @@ class Card2 extends Component {
           contentStyle={modalStyles}
         >
           <div className="modal-pic-container">
-            <img className="modal-side-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+            <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
           </div>
           <div className="modal-content-container">
             <p>
@@ -59,9 +59,9 @@ class Card2 extends Component {
 
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-        <Card className="card" onClick={this.handleClick}>
+        <Card className="card-element" onClick={this.handleClick}>
           <CardMedia className="card-media" overlay={ overlay }>
-            <img src={ cardImg } alt=""/>
+            <img src={ cardImg } alt="" className="vertical-card-image"/>
           </CardMedia>
           { modal }
         </Card>
@@ -70,6 +70,6 @@ class Card2 extends Component {
   }
 }
 
-export default Card2;
+export default Card3;
 
 
