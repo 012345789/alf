@@ -18,20 +18,25 @@ class AlfIntro extends Component {
     return (
       <div style={bkgrd}>
         <div id="title-container" >
-          <div className="title">
-            <span>
+          <div className="title-text">
+            <div className="title-description">
+              A fundraiser for the Gardens at Lake Merritt
+            </div>
+            <div className="title-count">
+              5th Annual
+            </div>
+            <div className="title">
               Autumn
-            </span>
-          </div>
-          <div className="title">
-            <span>
-              Lights
-            </span>
-          </div>
-          <div className="title">
-            <span>
+            </div>
+            <div className="title" id="lights">
+              LIGHTS
+            </div>
+            <div className="title">
               Festival
-            </span>
+            </div>
+            <div className="title-date">
+              October 19 - 21, 2017
+            </div>
           </div>
         </div>
       </div>

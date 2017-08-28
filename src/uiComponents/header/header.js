@@ -15,8 +15,8 @@ const Header = () => {
       <div id="header">
         <Tabs className="nav-tabs">
           <Tab className="nav-tab" label="About" href="#About"/>
-          <Tab className="nav-tab" label="Tickets" href="#Tickets"/>
-          <Tab className="nav-tab" label="Sponsors" href="#Sponsors"/>
+          <Tab className="nav-tab" label="Tickets (On Sale Now)" href="#Tickets"/>
+          <Tab className="nav-tab" label="Sponsors/Fundraising Goals" href="#Sponsors"/>
         </Tabs>
       </div>
     </MuiThemeProvider>

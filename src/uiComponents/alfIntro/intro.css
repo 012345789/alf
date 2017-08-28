@@ -3,15 +3,50 @@
   margin-top: -36%;
 }
 
-#title-container .title * {
+@font-face {
+  font-family: 'Aquiline Two';
+  src: url('../../libraries/fonts/AquilineTwo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quartan LT Std Bold';
+  src: url('../../libraries/fonts/Quartan-LT-Std-Bold.ttf') format('truetype');
+}
+
+#title-container .title-text {
   text-align: left;
   margin-left: 15%;
-  margin-top: 3%;
-  color: #FFFFFF;
-  /* text-shadow: -1px 0 #94D47F, 0 1px #94D47F, 1px 0 #94D47F, 0 -1px #94D47F; */
-  font-family: Georgia;
-  font-size: 1.6em;
-  text-transform: uppercase;
   float: left;
   width: 85%;
+}
+
+#title-container .title-text .title-count,
+#title-container .title-text .title-date,
+#title-container .title-text .title {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: 'Quartan LT Std Bold', Georgia;
+}
+
+#title-container .title-text .title-count {
+  margin-left: 1.5%;
+}
+
+
+#title-container .title-text .title#lights {
+  margin-left: 1%;
+}
+
+#title-container .title-text .title {
+  font-size: 200%;
+}
+
+#title-container .title-text .title-description {
+  font-family: 'Aquiline Two', Arial;
+  margin-bottom: 3%;
+}
+
+#title-container .title * {
+  /* color: #FFFFFF; */
+  /* text-shadow: -1px 0 #94D47F, 0 1px #94D47F, 1px 0 #94D47F, 0 -1px #94D47F; */
 }
