@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../cards/cards.css';
+import '../cards/modals.css';
+import '../cards/card3.css';
 import Card1 from '../cards/card1.js';
 import Card2 from '../cards/card2.js';
 import Card3 from '../cards/card3.js';

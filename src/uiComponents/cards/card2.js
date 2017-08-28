@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
-import './modals.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
@@ -38,6 +37,7 @@ class Card2 extends Component {
           open={this.props.state.modal === 'card2'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
+          autoScrollBodyContent={true}
         >
           <img className="modal-pic" src={ cardImg2 } alt="Autumn Lights Medley"/>
           <p>

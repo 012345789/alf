@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
 import './modals.css';
-import './card3.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
