@@ -1,0 +1,7 @@
+.modal-content-container .faq-content {
+  overflow-y: scroll;
+}
+
+.modal-content-container .faq-content .faq-question {
+  font-weight: 900;
+}

@@ -3,14 +3,12 @@
   text-align: center;
 }
 
-.sponsors-container {
-  text-align: center;
+.sponsors * {
+  color: #333447;
 }
 
-.sponsor {
-  /* padding-left: 2em; */
-  /* padding-right: 2em; */
-  padding: 2em;
+.sponsors-container {
+  text-align: center;
 }
 
 .sponsor-name {
@@ -44,7 +42,6 @@
 }
 
 .sponsors-row {
-  /* text-align: center; */
   clear: both;
   display: inline-flex;
 }

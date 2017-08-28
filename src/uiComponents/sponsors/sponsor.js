@@ -6,9 +6,11 @@ class Sponsor extends Component {
     this.props = props;
   }
 
+  // TODO: needs vertical centering
   render() {
     return (
-      <div className="sponsor">
+      /* <div className="sponsor col-3"> */
+      <div className="col-4 sponsor">
         <h4 className="sponsor-name">
           {this.props.name}
         </h4>

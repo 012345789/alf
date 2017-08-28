@@ -16,26 +16,12 @@ body {
   font-size: large;
 }
 
-#title-container {
-  /* offset background image height padding */
-  margin-top: -36%;
-}
-
-#title-container .title {
-    text-align: left;
-    margin-left: 15%;
-    margin-top: 3%;
-    color: #FFFFFF;
-    /* text-shadow: -1px 0 #94D47F, 0 1px #94D47F, 1px 0 #94D47F, 0 -1px #94D47F; */
-    font-family: Georgia;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    float: left;
-    width: 85%;
-}
-
 .App .section {
   width: 100%;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+* {
+  color: #EBFAFF;
 }

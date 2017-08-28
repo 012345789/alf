@@ -19,19 +19,16 @@ class Sponsors extends Component {
         <h2>
           Sponsors
         </h2>
-        <div className="sponsors-container">
-          <div className="sponsors-row">
+        <div className="sponsors-container container">
+          <div className="row">
             <Sponsor name="Oakland A's" img={oaklandAsLogo} />
             <Sponsor name="Niantic Labs" img={nianticLogo} />
             <Sponsor name="City of Oakland" img={cityOfOaklandLogo} />
           </div>
-          <div className="sponsors-row">
+          <div className="row">
             <Sponsor name="Oakland Magazine" img={oaklandMagazineLogo} />
-            <Sponsor name="Oakland A's" img={oaklandAsLogo} />
-            <Sponsor name="East Bay Express" img={eastBayExpressLogo} />
-          </div>
-          <div className="sponsors-row one-sponsor">
             <Sponsor name="Friends of the Gardens at Lake Merritt" img={friendsLogo} className="single-row"/>
+            <Sponsor name="East Bay Express" img={eastBayExpressLogo} />
           </div>
         </div>
       </div>

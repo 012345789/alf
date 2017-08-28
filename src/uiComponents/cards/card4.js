@@ -33,24 +33,32 @@ class Card4 extends Component {
     let modal = (
       <div className="modal">
         <Dialog
-          title="Frequently Asked Questions"
+          title="Tickets"
           open={this.props.state.modal === 'card4'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
+          autoScrollBodyContent={true}
         >
           <div className="modal-content-container">
-            <p>
-              Here's my question?
-            </p>
-            <p>
-              Here's the answer.
-            </p>
-            <p>
-              This year's festival will take place from October 19th through October 21st, every night from 6 pm until 11 pm.
-            </p>
-          </div>
-          <div className="modal-pic-container">
-            <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+            <div className="row">
+              <div className="col-9">
+                <p>
+                  General Admission – $20 adults/$7 youth (advance); $25/$10 event day
+                </p>
+                <p>
+                  Tickets will be available online at www.Eventbrite.com beginning September 1.
+                </p>
+                <p>
+                  All proceeds benefit the Friends of the Gardens at Lake Merritt for improvements at the gardens including construction of a new entrance on Bellevue Avenue.
+                </p>
+                <p>
+                  This year's festival will take place from October 19th through October 21st, every night from 6 pm until 11 pm.
+                </p>
+              </div>
+              <div className="col-3">
+                <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+              </div>
+            </div>
           </div>
         </Dialog>
       </div>

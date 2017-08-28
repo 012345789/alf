@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './libraries/css/simple-grid.css';
 import './App.css';
 
 import Header from './uiComponents/header/header.js';

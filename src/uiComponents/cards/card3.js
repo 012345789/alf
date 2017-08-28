@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
 import './modals.css';
+import './card3.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
@@ -38,20 +39,36 @@ class Card3 extends Component {
           open={this.props.state.modal === 'card3'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
+          autoScrollBodyContent={true}
         >
-          <div className="modal-pic-container">
-            <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
-          </div>
           <div className="modal-content-container">
-            <p>
-              Here's my question?
-            </p>
-            <p>
-              Here's the answer.
-            </p>
-            <p>
-              This year's festival will take place from October 19th through October 21st, every night from 6 pm until 11 pm.
-            </p>
+            <div className="row">
+              <div className="col-3">
+                <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+              </div>
+              <div className="col-9">
+                <div className="faq-content">
+                  <p className="faq-question">
+                    Will there be Food &amp; Drink?
+                  </p>
+                  <p className="faq-answer">
+                    Autumn Lights 2017 will feature a delectable array of locally-made food, beer and wine available for purchase.
+                  </p>
+                  <p className="faq-question">
+                    What Should I Wear?
+                  </p>
+                  <p className="faq-answer">
+                    Autumn Lights is an outdoor event in a public garden. Dress comfortably and in layers. Wear shoes appropriate for strolling/walking. Check weather listings for current forecasts.
+                  </p>
+                  <p className="faq-question">
+                    What’s the Best Way to Get to/from Autumn Lights?
+                  </p>
+                  <p className="faq-answer">
+                    Autumn Lights is nestled in the gardens of Lakeside Park which surrounds Lake Merritt. The park entrance is on Bellevue Avenue, off Grand Avenue, just below Harrison Street. The street address is 666 Bellevue Avenue, Oakland, CA 94612.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </Dialog>
       </div>
