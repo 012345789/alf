@@ -15,7 +15,7 @@ class Sponsors extends Component {
 
   render() {
     return (
-      <div className="section sponsors">
+      <div id="Sponsors" className="section sponsors">
         <h2>
           Sponsors
         </h2>

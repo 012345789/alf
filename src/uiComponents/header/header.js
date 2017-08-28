@@ -14,9 +14,9 @@ const Header = () => {
     <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
       <div id="header">
         <Tabs className="nav-tabs">
-          <Tab className="nav-tab" label="About"/>
-          <Tab className="nav-tab" label="Tickets"/>
-          <Tab className="nav-tab" label="Sponsors"/>
+          <Tab className="nav-tab" label="About" href="#About"/>
+          <Tab className="nav-tab" label="Tickets" href="#Tickets"/>
+          <Tab className="nav-tab" label="Sponsors" href="#Sponsors"/>
         </Tabs>
       </div>
     </MuiThemeProvider>

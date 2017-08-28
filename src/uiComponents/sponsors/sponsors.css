@@ -1,6 +1,7 @@
-.sponsors {
+.App .section.sponsors {
   background-color: white;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .sponsors * {

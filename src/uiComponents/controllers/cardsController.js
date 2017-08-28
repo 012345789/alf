@@ -21,7 +21,8 @@ class CardsController extends Component {
 
   render() {
     return (
-      <div className="section">
+      // <div className="section">
+      <div>
         <div className="card">
           <Card1 toggleModal={this.toggleModal} state={this.state}>
           </Card1>
@@ -30,7 +31,7 @@ class CardsController extends Component {
           <Card2 toggleModal={this.toggleModal} state={this.state}>
           </Card2>
         </div>
-        <div className="card vertical-cards">
+        <div id="Tickets" className="card vertical-cards section">
           <div className="vertical-card">
             <Card3 toggleModal={this.toggleModal} state={this.state}>
             </Card3>
