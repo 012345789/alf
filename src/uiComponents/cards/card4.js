@@ -45,7 +45,7 @@ class Card4 extends Component {
                   General Admission – $20 adults/$7 youth (advance); $25/$10 event day
                 </p>
                 <p>
-                  Tickets will be available online at www.Eventbrite.com beginning September 1.
+        Tickets are available online at <a rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073">Eventbrite</a>.
                 </p>
                 <p>
                   All proceeds benefit the Friends of the Gardens at Lake Merritt for improvements at the gardens including construction of a new entrance on Bellevue Avenue.

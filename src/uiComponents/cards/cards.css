@@ -9,16 +9,10 @@
 
 .vertical-cards {
   display: inline-flex;
-  /* height: 27em !important; */
 }
 
 .vertical-card {
   width: 45.7%;
-  /* height: 474px !important; */
-  /* overflow: hidden; */
-  /* height: 100%; */
-  /* margin-left: 1em; */
-  /* margin-right: 1em; */
   left: 1em;
 }
 
@@ -32,6 +26,12 @@
 
 .card-element {
   /* height: 100% !important; */
-  margin-left: 1em;
-  margin-right: 1em;
+  /* margin-left: 1em; */
+  /* margin-right: 1em; */
+  height: 85% !important;
+  width: 85% !important;
+  max-width: none !important;
+  min-width: none !important;
+  margin-left: 7.5%;
+  margin-bottom: 2.5%;
 }

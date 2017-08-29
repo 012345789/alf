@@ -55,7 +55,7 @@ class Card2 extends Component {
 
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-        <Card className="card" onClick={this.handleClick}>
+        <Card className="card-element" onClick={this.handleClick}>
           <CardMedia className="card-media" overlay={ overlay }>
             <img src={ cardImg2 } alt=""/>
           </CardMedia>

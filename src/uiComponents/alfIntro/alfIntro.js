@@ -19,11 +19,11 @@ class AlfIntro extends Component {
       <div style={bkgrd}>
         <div id="title-container" >
           <div className="title-text">
-            <div className="title-description">
+            <div id="title-description">
               A fundraiser for the Gardens at Lake Merritt
             </div>
-            <div className="title-count">
-              5th Annual
+            <div id="title-count">
+              6th Annual
             </div>
             <div className="title">
               Autumn
@@ -34,7 +34,7 @@ class AlfIntro extends Component {
             <div className="title">
               Festival
             </div>
-            <div className="title-date">
+            <div id="title-date">
               October 19 - 21, 2017
             </div>
           </div>

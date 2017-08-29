@@ -41,11 +41,19 @@ class Card1 extends Component {
         >
           <img className="modal-pic" src={ cardImg } alt="Artist Crafted Mushroom Lights"/>
           <p>
-            The festive evenings blend live music, art, fire dancers, food and libations to make one unforgettable experience. This wildly popular annual tradition benefiting the Gardens at Lake Merritt is easy to get to and fun for all ages. Tickets are expected to sell out so be sure to check back on September 1 for more details!
+            The festive evenings blend live music, art, fire dancers, food and libations to make one unforgettable experience. This wildly popular annual tradition benefiting the Gardens at Lake Merritt is easy to get to and fun for all ages.
           </p>
 
           <p>
             The Autumn Lights Festival, which has become a unique Oakland tradition, expands this year to a festive four-night community event held in the seven-acre oasis of themed gardens nestled in Lakeside Park surrounding Lake Merritt.
+          </p>
+
+          <p>
+            This festive three-night event is for all ages. It entails a leisurely stroll along paved pathways through seven- acres of lush gardens. The pathways are minimally lit so as not to impede the art, so if you feel you may need a little extra light, feel free to bring a small flashlight. The festival is wheelchair accessible, ADA compliant.
+          </p>
+
+          <p>
+            Persons will special needs may contact festival organizers in advance for assistance during the festival. Send an email to samee@heartofthetownevents.org or call Heart of the Town Events at 510-550- 4804, ext. 1.
           </p>
         </Dialog>
       </div>
@@ -54,7 +62,7 @@ class Card1 extends Component {
     return (
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <div id="About" className="section">
-          <Card className="card" onClick={this.handleClick}>
+          <Card className="card-element" onClick={this.handleClick}>
             <CardMedia className="card-media" overlay={ overlay }>
               <img src={ cardImg } alt="Artist Crafted Mushroom Lights"/>
             </CardMedia>

@@ -51,7 +51,7 @@ class Card3 extends Component {
                     Will there be Food &amp; Drink?
                   </p>
                   <p className="faq-answer">
-                    Autumn Lights 2017 will feature a delectable array of locally-made food, beer and wine available for purchase.
+                    Autumn Lights 2017 will feature a delectable array of locally-made food, beer and wine available for purchase. Last year, our food court was a huge hit and this year it will be expanded with an even broader range of culinary options. Locally-crafted beer, wine and soft drinks will also be available at two conveniently located stations.
                   </p>
                   <p className="faq-question">
                     What Should I Wear?
@@ -59,11 +59,29 @@ class Card3 extends Component {
                   <p className="faq-answer">
                     Autumn Lights is an outdoor event in a public garden. Dress comfortably and in layers. Wear shoes appropriate for strolling/walking. Check weather listings for current forecasts.
                   </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className="faq-content">
                   <p className="faq-question">
-                    What’s the Best Way to Get to/from Autumn Lights?
+                    What Items are NOT Allowed Inside the Festival Grounds?
                   </p>
                   <p className="faq-answer">
-                    Autumn Lights is nestled in the gardens of Lakeside Park which surrounds Lake Merritt. The park entrance is on Bellevue Avenue, off Grand Avenue, just below Harrison Street. The street address is 666 Bellevue Avenue, Oakland, CA 94612.
+                    For your safety the following items are NOT allowed:
+                  </p>
+                  <p className="faq-answer">
+                      NO Cans or Glass Bottles
+                  </p>
+                  <p className="faq-answer">
+                      NO Coolers or Ice Chests
+                  </p>
+                  <p className="faq-answer">
+                      NO Alcoholic Beverages
+                  </p>
+                  <p className="faq-answer">
+                    NO Animals with the Exception of Service Animals
                   </p>
                 </div>
               </div>

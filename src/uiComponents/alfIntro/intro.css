@@ -20,15 +20,15 @@
   width: 85%;
 }
 
-#title-container .title-text .title-count,
-#title-container .title-text .title-date,
+#title-container .title-text #title-count,
+#title-container .title-text #title-date,
 #title-container .title-text .title {
   margin-top: 2%;
   margin-bottom: 2%;
   font-family: 'Quartan LT Std Bold', Georgia;
 }
 
-#title-container .title-text .title-count {
+#title-container .title-text #title-count {
   margin-left: 1.5%;
 }
 
@@ -41,10 +41,15 @@
   font-size: 200%;
 }
 
-#title-container .title-text .title-description {
+#title-container .title-text #title-description {
   font-family: 'Aquiline Two', Arial;
   margin-bottom: 3%;
 }
+
+#title-container .title-text #title-date {
+  margin-left: -1%;
+}
+
 
 #title-container .title * {
   /* color: #FFFFFF; */
