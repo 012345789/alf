@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
+import './modals.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import cardImg from '../../img/ALF-14-28.jpg';
+import cardImg from '../../img/ALF-14-2-crop.jpg';
 
 
 class Card4 extends Component {
@@ -11,21 +12,19 @@ class Card4 extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.updateSubtext = this.updateSubtext.bind(this);
-    this.state = {subtext: '', title: ''};
+    this.state = {subtext: ''};
   }
 
   handleClick() {
     this.props.toggleModal('card4');
   }
 
-
   updateSubtext() {
     if(window.innerWidth < 750) {
-      this.setState({ subtext: '', title: 'How can I buy tickets?'});
+      this.setState({ subtext: '' });
     } else {
-      let fullTitle = "I'm stoked! How can I buy tickets?";
-      let fullSubtext = "Last year's ticketing system was a huge success. We're proud to announce that guests can expect a great ticketing experience again this year.";
-      this.setState({ subtext: fullSubtext, title: fullTitle });
+      let fullSubtext = "The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.";
+      this.setState({ subtext: fullSubtext });
     }
   }
 
@@ -41,7 +40,7 @@ class Card4 extends Component {
   render() {
 
     let overlay = (
-        <CardTitle title={this.state.title} subtitle={this.state.subtext}>
+        <CardTitle title="What should I know beforehand?" subtitle={this.state.subtext}>
         </CardTitle>
     );
 
@@ -51,10 +50,11 @@ class Card4 extends Component {
       textAlign: 'center',
     };
 
+
     let modal = (
       <div className="modal">
         <Dialog
-          title="Tickets"
+          title="Frequently Asked Questions"
           open={this.props.state.modal === 'card4'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
@@ -62,22 +62,48 @@ class Card4 extends Component {
         >
           <div className="modal-content-container">
             <div className="row">
-              <div className="col-9">
-                <p>
-                  General Admission – $20 adults/$7 youth (advance); $25/$10 event day
-                </p>
-                <p>
-        Tickets are available online at <a rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073">Eventbrite</a>.
-                </p>
-                <p>
-                  All proceeds benefit the Friends of the Gardens at Lake Merritt for improvements at the gardens including construction of a new entrance on Bellevue Avenue.
-                </p>
-                <p>
-                  This year's festival will take place from October 19th through October 21st, every night from 6 pm until 11 pm.
-                </p>
-              </div>
               <div className="col-3">
-                <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+                <img className="modal-vertical-pic" id="faq-picture" src={ cardImg } alt="Ball of Light on a Cliff"/>
+              </div>
+              <div className="col-9">
+                <div className="faq-content">
+                  <p className="faq-question">
+                    Will there be Food &amp; Drink?
+                  </p>
+                  <p className="faq-answer">
+                    Autumn Lights 2017 will feature a delectable array of locally-made food, beer and wine available for purchase. Last year, our food court was a huge hit and this year it will be expanded with an even broader range of culinary options. Locally-crafted beer, wine and soft drinks will also be available at two conveniently located stations.
+                  </p>
+                  <p className="faq-question">
+                    What Should I Wear?
+                  </p>
+                  <p className="faq-answer">
+                    Autumn Lights is an outdoor event in a public garden. Dress comfortably and in layers. Wear shoes appropriate for strolling/walking. Check weather listings for current forecasts.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <div className="faq-content">
+                  <p className="faq-question">
+                    What Items are NOT Allowed Inside the Festival Grounds?
+                  </p>
+                  <p className="faq-answer">
+                    For your safety the following items are NOT allowed:
+                  </p>
+                  <p className="faq-answer">
+                      NO Cans or Glass Bottles
+                  </p>
+                  <p className="faq-answer">
+                      NO Coolers or Ice Chests
+                  </p>
+                  <p className="faq-answer">
+                      NO Alcoholic Beverages
+                  </p>
+                  <p className="faq-answer">
+                    NO Animals with the Exception of Service Animals
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -89,7 +115,7 @@ class Card4 extends Component {
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <Card className="card-element" onClick={this.handleClick}>
           <CardMedia className="card-media" overlay={ overlay }>
-            <img src={ cardImg } alt="" className="vertical-card-image" />
+            <img src={ cardImg } alt="" className="vertical-card-image"/>
           </CardMedia>
           { modal }
         </Card>

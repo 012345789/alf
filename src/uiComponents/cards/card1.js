@@ -61,7 +61,7 @@ class Card1 extends Component {
         >
           <img className="modal-pic" src={ cardImg } alt="Artist Crafted Mushroom Lights"/>
           <p>
-            The festive evenings blend live music, art, fire dancers, food and libations to make one unforgettable experience. This wildly popular annual tradition benefiting the Gardens at Lake Merritt is easy to get to and fun for all ages.
+            The festive evenings blend live music, illuminated art, fire dancers, food and libations to make one unforgettable experience. This wildly popular annual tradition benefiting the Gardens at Lake Merritt is easy to get to and fun for all ages.
           </p>
 
           <p>
