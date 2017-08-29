@@ -14,11 +14,34 @@ let bkgrd = {
 }
 
 class AlfIntro extends Component {
+  constructor(props) {
+    super(props);
+    this.updateMargin = this.updateMargin.bind(this);
+    this.state = {titleTextStyles: {marginLeft: '15%', marginTop: '0'}};
+  }
+
+  updateMargin() {
+    if(window.innerWidth < 830) {
+      this.setState({ titleTextStyles: {marginLeft: '26%', marginTop: '37%'} });
+    } else {
+      this.setState({ titleTextStyles: {marginLeft: '15%', marginTop: '0'} });
+    }
+  }
+
+  componentDidMount() {
+    this.updateMargin();
+    window.addEventListener("resize", this.updateMargin.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateMargin.bind(this));
+  }
+
   render () {
     return (
       <div style={bkgrd}>
         <div id="title-container" >
-          <div className="title-text">
+          <div className="title-text" style={this.state.titleTextStyles}>
             <div id="title-description">
               A fundraiser for the Gardens at Lake Merritt
             </div>

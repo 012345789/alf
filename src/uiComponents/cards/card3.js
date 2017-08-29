@@ -11,16 +11,36 @@ class Card3 extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.updateSubtext = this.updateSubtext.bind(this);
+    this.state = {subtext: ''};
   }
 
   handleClick() {
     this.props.toggleModal('card3');
   }
 
+  updateSubtext() {
+    if(window.innerWidth < 750) {
+      this.setState({ subtext: '' });
+    } else {
+      let fullSubtext = "The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.";
+      this.setState({ subtext: fullSubtext });
+    }
+  }
+
+  componentDidMount() {
+    this.updateSubtext();
+    window.addEventListener("resize", this.updateSubtext.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateSubtext.bind(this));
+  }
+
   render() {
 
     let overlay = (
-        <CardTitle title="What should I know beforehand?" subtitle="The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.">
+        <CardTitle title="What should I know beforehand?" subtitle={this.state.subtext}>
         </CardTitle>
     );
 

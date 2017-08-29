@@ -10,16 +10,38 @@ class Card4 extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.updateSubtext = this.updateSubtext.bind(this);
+    this.state = {subtext: '', title: ''};
   }
 
   handleClick() {
     this.props.toggleModal('card4');
   }
 
+
+  updateSubtext() {
+    if(window.innerWidth < 750) {
+      this.setState({ subtext: '', title: 'How can I buy tickets?'});
+    } else {
+      let fullTitle = "I'm stoked! How can I buy tickets?";
+      let fullSubtext = "Last year's ticketing system was a huge success. We're proud to announce that guests can expect a great ticketing experience again this year.";
+      this.setState({ subtext: fullSubtext, title: fullTitle });
+    }
+  }
+
+  componentDidMount() {
+    this.updateSubtext();
+    window.addEventListener("resize", this.updateSubtext.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateSubtext.bind(this));
+  }
+
   render() {
 
     let overlay = (
-        <CardTitle title="I'm stoked! How can I buy tickets?" subtitle="Last year's ticketing system was a huge success. We're proud to announce that guests can expect a great ticketing experience again this year.">
+        <CardTitle title={this.state.title} subtitle={this.state.subtext}>
         </CardTitle>
     );
 
