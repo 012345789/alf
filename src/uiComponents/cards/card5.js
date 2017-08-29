@@ -10,17 +10,37 @@ class Card5 extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.updateSubtext = this.updateSubtext.bind(this);
+    this.state = {subtext: ''};
   }
 
   handleClick() {
     this.props.toggleModal('card5');
   }
 
+  updateSubtext() {
+    if(window.innerWidth < 550) {
+      this.setState({ subtext: '' });
+    } else {
+      let fullSubtext = "Whether you plan to drive, bus, or ride-share, here's what you can do.";
+      this.setState({ subtext: fullSubtext });
+    }
+  }
+
+  componentDidMount() {
+    this.updateSubtext();
+    window.addEventListener("resize", this.updateSubtext.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateSubtext.bind(this));
+  }
+
   render() {
 
     let overlay = (
-        <CardTitle title="Transportation Options" subtitle="Whether you plan to drive, bus, or ride-share, here's what you can do.">
-        </CardTitle>
+      <CardTitle title="Transportation Options" subtitle={this.state.subtext}>
+      </CardTitle>
     );
 
     let modalStyles = {
@@ -41,10 +61,10 @@ class Card5 extends Component {
           <div className="modal-content-container">
             <div className="row">
               <div className="col-12">
-                <img className="modal-pic" src={ cardImg } alt="Lights in a Tree and Bright Wooden Structure"/>
                 <p>
                   Autumn Lights is nestled in the gardens of Lakeside Park which surrounds Lake Merritt. The park entrance is on Bellevue Avenue, off Grand Avenue, just below Harrison Street. The street address is 666 Bellevue Avenue, Oakland, CA 94612.
                 </p>
+                <img className="modal-pic" src={ cardImg } alt="Lights in a Tree and Bright Wooden Structure"/>
                 <p>
                   Here is a summary of the best options for getting to and from the festival:
                 </p>

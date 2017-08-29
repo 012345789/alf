@@ -4,6 +4,10 @@
   background-color: #334A52;
 }
 
+#icon-menu {
+  border: 1px solid #729DAB;
+}
+
 .nav-tabs {
   width: 100%;
 }

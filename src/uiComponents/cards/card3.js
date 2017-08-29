@@ -63,7 +63,7 @@ class Card3 extends Component {
           <div className="modal-content-container">
             <div className="row">
               <div className="col-3">
-                <img className="modal-vertical-pic" src={ cardImg } alt="Ball of Light on a Cliff"/>
+                <img className="modal-vertical-pic" id="faq-picture" src={ cardImg } alt="Ball of Light on a Cliff"/>
               </div>
               <div className="col-9">
                 <div className="faq-content">

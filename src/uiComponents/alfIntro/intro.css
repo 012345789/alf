@@ -3,16 +3,6 @@
   margin-top: -36%;
 }
 
-@font-face {
-  font-family: 'Aquiline Two';
-  src: url('../../libraries/fonts/AquilineTwo.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Quartan LT Std Bold';
-  src: url('../../libraries/fonts/Quartan-LT-Std-Bold.ttf') format('truetype');
-}
-
 #title-container .title-text {
   text-align: left;
   margin-left: 15%;

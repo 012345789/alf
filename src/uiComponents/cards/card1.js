@@ -10,16 +10,36 @@ class Card1 extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.updateSubtext = this.updateSubtext.bind(this);
+    this.state = {subtext: ''};
   }
 
   handleClick() {
     this.props.toggleModal('card1');
   }
 
+  updateSubtext() {
+    if(window.innerWidth < 550) {
+      this.setState({ subtext: '' });
+    } else {
+      let fullSubtext = "Imagine yourself immersed in acres of lush gardens illuminated with mesmerizing art and lighting installations created by Bay Area artists.";
+      this.setState({ subtext: fullSubtext });
+    }
+  }
+
+  componentDidMount() {
+    this.updateSubtext();
+    window.addEventListener("resize", this.updateSubtext.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateSubtext.bind(this));
+  }
+
   render() {
 
     let overlay = (
-      <CardTitle title="What is it?" subtitle="Imagine yourself immersed in acres of lush gardens illuminated with mesmerizing art and lighting installations created by Bay Area artists.">
+      <CardTitle title="What is it?" subtitle={this.state.subtext}>
       </CardTitle>
     );
 

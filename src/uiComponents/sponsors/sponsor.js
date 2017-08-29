@@ -9,13 +9,12 @@ class Sponsor extends Component {
   // TODO: needs vertical centering
   render() {
     return (
-      /* <div className="sponsor col-3"> */
       <div className="col-4 sponsor">
         <h4 className="sponsor-name">
           {this.props.name}
         </h4>
         <div className="sponsor-logo-container">
-          <img className="spon-logo" src={this.props.img} />
+          <img className="spon-logo" src={this.props.img} alt={this.props.name}/>
           <br className="sponsor-logo-parent-extension" />
         </div>
       </div>

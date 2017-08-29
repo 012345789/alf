@@ -10,17 +10,37 @@ class Card2 extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.updateSubtext = this.updateSubtext.bind(this);
+    this.state = {subtext: ''};
   }
 
   handleClick() {
     this.props.toggleModal('card2');
   }
 
+  updateSubtext() {
+    if(window.innerWidth < 550) {
+      this.setState({ subtext: '' });
+    } else {
+      let fullSubtext = "Easily accessible in the heart of Oakland's pride, Lake Merritt, which is bustling with wildlife and fosters a culture-focused community.";
+      this.setState({ subtext: fullSubtext });
+    }
+  }
+
+  componentDidMount() {
+    this.updateSubtext();
+    window.addEventListener("resize", this.updateSubtext.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateSubtext.bind(this));
+  }
+
   render() {
 
     let overlay = (
-        <CardTitle title="Where/When is it?" subtitle="Easily accessible in the heart of Oakland's pride, Lake Merritt, which is bustling with wildlife and fosters a culture-focused community.">
-        </CardTitle>
+      <CardTitle title="Where/When is it?" subtitle={this.state.subtext}>
+      </CardTitle>
     );
 
     let modalStyles = {

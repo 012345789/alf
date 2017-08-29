@@ -5,3 +5,7 @@
 .modal-content-container .faq-content .faq-question {
   font-weight: 900;
 }
+
+.modal-content-container #faq-picture {
+  margin-top: 40%;
+}

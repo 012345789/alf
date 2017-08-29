@@ -28,3 +28,13 @@ body {
 * {
   color: #EBFAFF;
 }
+
+@font-face {
+  font-family: 'Aquiline Two';
+  src: url('./libraries/fonts/AquilineTwo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Quartan LT Std Bold';
+  src: url('./libraries/fonts/Quartan-LT-Std-Bold.ttf') format('truetype');
+}

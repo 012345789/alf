@@ -10,18 +10,37 @@ class Fundraising extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.updateSubtext = this.updateSubtext.bind(this);
+    this.state = {subtext: ''};
   }
 
   handleClick() {
     this.props.toggleModal('fundraising');
   }
 
+  updateSubtext() {
+    if(window.innerWidth < 750) {
+      this.setState({ subtext: '' });
+    } else {
+      let fullSubtext = "The annual Autumn Lights Festival aims to raise money to improve the Gardens of Lake Merritt and power it with sustainable alternative energy.";
+      this.setState({ subtext: fullSubtext });
+    }
+  }
+
+  componentDidMount() {
+    this.updateSubtext();
+    window.addEventListener("resize", this.updateSubtext.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateSubtext.bind(this));
+  }
+
   render() {
 
-
     let overlay = (
-        <CardTitle title="Fundraising Goals" subtitle="The annual Autumn Lights Festival aims to raise money to improve the Gardens of Lake Merritt and power it with sustainable alternative energy.">
-        </CardTitle>
+      <CardTitle title="Fundraising Goals" subtitle={this.state.subtext}>
+      </CardTitle>
     );
 
     let modalStyles = {
@@ -45,7 +64,7 @@ class Fundraising extends Component {
             Held over three evenings in the night-darkened Gardens at Lake Merritt in Lakeside Park, Autumn Lights Festival is a fundraiser, with an old-school sense of purpose. Over five years’ of festivals, we reached a $200,000 goal.
           </p>
           <p>
-        These funds will finance a new Garden Entry Welcome Plaza in 2017, with lush plantings, energy-efficient lighting, durable and secure fencing, hardscaped sidewalks and containers, drought-tolerant irrigation. These will set off the Gardens’ grand new wrought-iron gates, designed by local artist <a target="_blank" href="http://www.slmetalworks.com/">Shawn Lovell</a> and financed by Oakland’s Measure DD.
+        These funds will finance a new Garden Entry Welcome Plaza in 2017, with lush plantings, energy-efficient lighting, durable and secure fencing, hardscaped sidewalks and containers, drought-tolerant irrigation. These will set off the Gardens’ grand new wrought-iron gates, designed by local artist <a target="_blank" rel="noopener noreferrer" href="http://www.slmetalworks.com/">Shawn Lovell</a> and financed by Oakland’s Measure DD.
           </p>
           <p>
             The tradition now enters its sixth year, with a new fundraising target of $400,000 for a second phase.
