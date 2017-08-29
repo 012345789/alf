@@ -19,16 +19,17 @@
 }
 
 #title-container .title-text #title-count {
-  margin-left: 1.5%;
+  margin-left: 7.5%;
 }
 
 
 #title-container .title-text .title#lights {
-  margin-left: 1%;
+  margin-left: 7%;
 }
 
 #title-container .title-text .title {
   font-size: 200%;
+  margin-left: 5.5%;
 }
 
 #title-container .title-text #title-description {
@@ -37,11 +38,12 @@
 }
 
 #title-container .title-text #title-date {
-  margin-left: -1%;
+  margin-left: 4.5%;
 }
 
 
-#title-container .title * {
-  /* color: #FFFFFF; */
+#title-container * {
+  color: #FFFFFF;
   /* text-shadow: -1px 0 #94D47F, 0 1px #94D47F, 1px 0 #94D47F, 0 -1px #94D47F; */
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }

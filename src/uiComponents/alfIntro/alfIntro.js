@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './intro.css';
-import alfLogo from '../../img/ALF-14-35.jpg';
+// import alfLogo from '../../img/ALF-14-35.jpg';
+import alfLogo from '../../img/intro-image.jpg';
 
 let bkgrd = {
   backgroundImage: `url(${alfLogo})`,
   width: '99%',
   height: '0',
-  paddingTop: '36%',
+  paddingTop: '66%',
   backgroundPosition: 'center top',
   backgroundSize: '100% auto',
   backgroundRepeat: 'no-repeat',
@@ -21,7 +22,7 @@ class AlfIntro extends Component {
   }
 
   updateMargin() {
-    if(window.innerWidth < 830) {
+    if(window.innerWidth < 800) {
       this.setState({ titleTextStyles: {marginLeft: '26%', marginTop: '37%'} });
     } else {
       this.setState({ titleTextStyles: {marginLeft: '15%', marginTop: '0'} });
