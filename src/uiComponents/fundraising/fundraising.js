@@ -11,7 +11,7 @@ class Fundraising extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.updateSubtext = this.updateSubtext.bind(this);
-    this.state = {subtext: ''};
+    this.state = {subtext: '', title: ''};
   }
 
   handleClick() {
@@ -19,11 +19,12 @@ class Fundraising extends Component {
   }
 
   updateSubtext() {
+    let title = "Fundraising Goals";
     if(window.innerWidth < 750) {
-      this.setState({ subtext: '' });
+      this.setState({ subtext: title, title: '' });
     } else {
       let fullSubtext = "The annual Autumn Lights Festival aims to raise money to improve the Gardens of Lake Merritt and power it with sustainable alternative energy.";
-      this.setState({ subtext: fullSubtext });
+      this.setState({ subtext: fullSubtext, title });
     }
   }
 
@@ -39,7 +40,7 @@ class Fundraising extends Component {
   render() {
 
     let overlay = (
-      <CardTitle title="Fundraising Goals" subtitle={this.state.subtext}>
+      <CardTitle title={this.state.title} subtitle={this.state.subtext}>
       </CardTitle>
     );
 

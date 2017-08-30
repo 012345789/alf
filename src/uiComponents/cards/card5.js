@@ -11,7 +11,7 @@ class Card5 extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.updateSubtext = this.updateSubtext.bind(this);
-    this.state = {subtext: ''};
+    this.state = {subtext: '', title: ''};
   }
 
   handleClick() {
@@ -19,11 +19,12 @@ class Card5 extends Component {
   }
 
   updateSubtext() {
+    let title = "Transportation Options";
     if(window.innerWidth < 550) {
-      this.setState({ subtext: '' });
+      this.setState({ subtext: title, title: '' });
     } else {
       let fullSubtext = "Whether you plan to drive, bus, or ride-share, here's what you can do.";
-      this.setState({ subtext: fullSubtext });
+      this.setState({ subtext: fullSubtext, title });
     }
   }
 
@@ -39,7 +40,7 @@ class Card5 extends Component {
   render() {
 
     let overlay = (
-      <CardTitle title="Transportation Options" subtitle={this.state.subtext}>
+      <CardTitle title={this.state.title} subtitle={this.state.subtext}>
       </CardTitle>
     );
 

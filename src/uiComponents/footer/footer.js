@@ -8,7 +8,9 @@ const Footer = () => {
   return (
     <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
       <div id="footer">
-        © {(new Date().getFullYear())} Autumn Lights Festival
+        <div className="footer-text">
+          © {(new Date().getFullYear())} Autumn Lights Festival
+        </div>
       </div>
     </MuiThemeProvider>
   );

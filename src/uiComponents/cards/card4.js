@@ -12,7 +12,7 @@ class Card4 extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.updateSubtext = this.updateSubtext.bind(this);
-    this.state = {subtext: ''};
+    this.state = {subtext: '', title: ''};
   }
 
   handleClick() {
@@ -20,11 +20,12 @@ class Card4 extends Component {
   }
 
   updateSubtext() {
+    let fullTitle = "What should I know beforehand?";
     if(window.innerWidth < 750) {
-      this.setState({ subtext: '' });
+      this.setState({ subtext: fullTitle, title: '' });
     } else {
       let fullSubtext = "The Autumn Lights Festival is an amazing spectactle that is great for family fun. Here's what you should know to get the most out of it.";
-      this.setState({ subtext: fullSubtext });
+      this.setState({ subtext: fullSubtext, title: fullTitle });
     }
   }
 
@@ -40,7 +41,7 @@ class Card4 extends Component {
   render() {
 
     let overlay = (
-        <CardTitle title="What should I know beforehand?" subtitle={this.state.subtext}>
+        <CardTitle title={this.state.title} subtitle={this.state.subtext}>
         </CardTitle>
     );
 

@@ -11,7 +11,7 @@ class Card1 extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.updateSubtext = this.updateSubtext.bind(this);
-    this.state = {subtext: ''};
+    this.state = {subtext: '', title: ''};
   }
 
   handleClick() {
@@ -19,11 +19,12 @@ class Card1 extends Component {
   }
 
   updateSubtext() {
+    let title = "What is it?";
     if(window.innerWidth < 550) {
-      this.setState({ subtext: '' });
+      this.setState({ subtext: title, title: '' });
     } else {
       let fullSubtext = "Imagine yourself immersed in acres of lush gardens illuminated with mesmerizing art and lighting installations created by Bay Area artists.";
-      this.setState({ subtext: fullSubtext });
+      this.setState({ subtext: fullSubtext, title });
     }
   }
 
@@ -39,7 +40,7 @@ class Card1 extends Component {
   render() {
 
     let overlay = (
-      <CardTitle title="What is it?" subtitle={this.state.subtext}>
+      <CardTitle title={this.state.title} subtitle={this.state.subtext}>
       </CardTitle>
     );
 
