@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './intro.css';
-// import alfLogo from '../../img/ALF-14-35.jpg';
 import alfLogo from '../../img/intro-image.jpg';
 
 let bkgrd = {
@@ -18,14 +17,16 @@ class AlfIntro extends Component {
   constructor(props) {
     super(props);
     this.updateMargin = this.updateMargin.bind(this);
-    this.state = {titleTextStyles: {marginLeft: '15%', marginTop: '0'}};
+    this.state = {titleTextStyles: {marginLeft: '15%', marginTop: '0', width: '85%'}};
   }
 
   updateMargin() {
-    if(window.innerWidth < 800) {
-      this.setState({ titleTextStyles: {marginLeft: '26%', marginTop: '37%'} });
+    if (window.innerWidth < 445) {
+      this.setState({ titleTextStyles: {marginLeft: '15%', marginTop: '37%', width: '85%'} });
+    } else if (window.innerWidth < 800) {
+      this.setState({ titleTextStyles: {marginLeft: '26%', marginTop: '37%', width: '74%'} });
     } else {
-      this.setState({ titleTextStyles: {marginLeft: '15%', marginTop: '0'} });
+      this.setState({ titleTextStyles: {marginLeft: '15%', marginTop: '0', width: '85%'} });
     }
   }
 

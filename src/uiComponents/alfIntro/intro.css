@@ -7,7 +7,6 @@
   text-align: left;
   margin-left: 15%;
   float: left;
-  width: 85%;
 }
 
 #title-container .title-text #title-count,
@@ -44,6 +43,5 @@
 
 #title-container * {
   color: #FFFFFF;
-  /* text-shadow: -1px 0 #94D47F, 0 1px #94D47F, 1px 0 #94D47F, 0 -1px #94D47F; */
   text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
