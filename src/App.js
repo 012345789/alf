@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './libraries/css/simple-grid.css';
 import './App.css';
+import './libraries/fonts/font-awesome-4.7.0/css/font-awesome.css';
 
 import Header from './uiComponents/header/header.js';
 import AlfIntro from './uiComponents/alfIntro/alfIntro.js';
@@ -39,7 +40,7 @@ class App extends Component {
 
         </div>
 
-        <Footer/>
+        <Footer toggleModal={this.toggleModal} state={this.state} />
 
       </div>
     );

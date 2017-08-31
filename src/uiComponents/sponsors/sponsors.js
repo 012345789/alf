@@ -22,7 +22,7 @@ class Sponsors extends Component {
         </h2>
         <div className="sponsors-container container">
           <div className="row">
-            <Sponsor type="Highlighted Sponsor" img={nianticLogo} />
+            <Sponsor type="Spotlight Sponsor" img={nianticLogo} />
             <Sponsor type="Festival Sponsor" img={oaklandAsLogo} />
             <Sponsor type="Festival Sponsor" img={cityOfOaklandLogo} />
           </div>
