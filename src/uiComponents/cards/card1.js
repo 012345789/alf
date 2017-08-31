@@ -3,7 +3,7 @@ import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import cardImg from '../../img/ALF-14-29.jpg';
+import cardImg from '../../img/Emily.Tinkey.tinks510.19.jpg';
 
 
 class Card1 extends Component {

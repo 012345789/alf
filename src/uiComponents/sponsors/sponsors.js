@@ -7,6 +7,7 @@ import cityOfOaklandLogo from './logos/city-of-oakland-logo.gif';
 import friendsLogo from './logos/friends-of-gardens-of-lake-merritt-logo.jpg';
 import eastBayExpressLogo from './logos/EBX.png';
 import oaklandMagazineLogo from './logos/oakland-magazine-logo.jpg';
+import heartOfTheTownLogo from './logos/heart-of-the-town-logo.png';
 
 class Sponsors extends Component {
   constructor(props) {
@@ -21,14 +22,27 @@ class Sponsors extends Component {
         </h2>
         <div className="sponsors-container container">
           <div className="row">
-            <Sponsor name="Oakland A's" img={oaklandAsLogo} />
-            <Sponsor name="Niantic Labs" img={nianticLogo} />
-            <Sponsor name="City of Oakland" img={cityOfOaklandLogo} />
+            <Sponsor type="Highlighted Sponsor" img={nianticLogo} />
+            <Sponsor type="Festival Sponsor" img={oaklandAsLogo} />
+            <Sponsor type="Festival Sponsor" img={cityOfOaklandLogo} />
           </div>
+          <h3>
+            In Partnership With
+          </h3>
           <div className="row">
-            <Sponsor name="Oakland Magazine" img={oaklandMagazineLogo} />
-            <Sponsor name="Friends of the Gardens at Lake Merritt" img={friendsLogo} className="single-row"/>
-            <Sponsor name="East Bay Express" img={eastBayExpressLogo} />
+            <Sponsor type="" img={oaklandMagazineLogo} />
+            <Sponsor type="" img={friendsLogo} />
+            <Sponsor type="" img={eastBayExpressLogo} />
+          </div>
+          <h3>
+            And
+          </h3>
+          <div className="row">
+            <div className="col-4"></div>
+            <div className="col-4">
+              <img className="spon-logo" src={heartOfTheTownLogo} alt="Heart of the Town Events" />
+            </div>
+            <div className="col-4"></div>
           </div>
         </div>
       </div>

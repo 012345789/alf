@@ -4,7 +4,8 @@
   background-color: #334A52;
 }
 
-#footer .footer-text {
+#footer * {
   padding-top: 1.5%;
+  margin-top: 0;
 }
 

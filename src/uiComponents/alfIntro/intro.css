@@ -18,9 +18,12 @@
 }
 
 #title-container .title-text #title-count {
-  margin-left: 7.5%;
+  margin-left: 8.5%;
 }
 
+#title-container .title-text .title#autumn {
+  margin-left: 6.5%;
+}
 
 #title-container .title-text .title#lights {
   margin-left: 7%;
@@ -34,6 +37,8 @@
 #title-container .title-text #title-description {
   font-family: 'Aquiline Two', Arial;
   margin-bottom: 3%;
+  font-size: 130%;
+  margin-left: -4%;
 }
 
 #title-container .title-text #title-date {

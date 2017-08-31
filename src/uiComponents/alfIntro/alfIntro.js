@@ -50,13 +50,13 @@ class AlfIntro extends Component {
             <div id="title-count">
               6th Annual
             </div>
-            <div className="title">
+            <div className="title" id="autumn">
               Autumn
             </div>
             <div className="title" id="lights">
               LIGHTS
             </div>
-            <div className="title">
+            <div className="title" id="festival">
               Festival
             </div>
             <div id="title-date">

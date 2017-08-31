@@ -3,6 +3,10 @@
   height: 45%;
 }
 
+.modal-wide-pic {
+  width: 100%;
+}
+
 .modal-pic-container {
   max-width: 20%;
   height: auto;

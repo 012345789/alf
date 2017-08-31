@@ -7,6 +7,14 @@
   margin-bottom: 2.5%;
 }
 
+.card-element {
+  opacity: 1;
+}
+
+.card-element:hover {
+  opacity: 0.5;
+}
+
 .vertical-cards {
   display: inline-flex;
 }
@@ -16,18 +24,7 @@
   left: 1em;
 }
 
-.vertical-card-image {
-  /* max-height: 474px; */
-}
-
-.card-media {
-  /* height: 100% !important; */
-}
-
 .card-element {
-  /* height: 100% !important; */
-  /* margin-left: 1em; */
-  /* margin-right: 1em; */
   height: 85% !important;
   width: 85% !important;
   max-width: none !important;

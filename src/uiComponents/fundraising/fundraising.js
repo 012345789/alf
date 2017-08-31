@@ -60,7 +60,7 @@ class Fundraising extends Component {
           contentStyle={modalStyles}
           autoScrollBodyContent={true}
         >
-          <img className="modal-pic" src={ cardImg } alt="Fundraising Plan Blueprint"/>
+          <img className="modal-wide-pic" src={ cardImg } alt="Fundraising Plan Blueprint"/>
           <p>
             Held over three evenings in the night-darkened Gardens at Lake Merritt in Lakeside Park, Autumn Lights Festival is a fundraiser, with an old-school sense of purpose. Over five years’ of festivals, we reached a $200,000 goal.
           </p>
