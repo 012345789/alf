@@ -32,7 +32,7 @@ class Footer extends Component {
           contentStyle={modalStyles}
           autoScrollBodyContent={true}
         >
-          Test Dialog
+          Photo credits to Holly Healy and Emily Tinkey.
         </Dialog>
       </div>
     );
