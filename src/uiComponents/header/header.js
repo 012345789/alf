@@ -39,7 +39,7 @@ let iconElement = (
       menuItemStyle={{paddingTop: '0.7em'}}
     >
       <MenuItem href="#About" primaryText="About"></MenuItem>
-      <MenuItem href="#Tickets" primaryText="Tickets - On Sale Now!"></MenuItem>
+      <MenuItem rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073" primaryText="Tickets - On Sale Now!"></MenuItem>
       <MenuItem href="#Sponsors" primaryText="Sponsors and Fundraising Goals"></MenuItem>
     </IconMenu>
   </div>
