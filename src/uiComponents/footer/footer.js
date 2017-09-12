@@ -32,8 +32,15 @@ class Footer extends Component {
           contentStyle={modalStyles}
           autoScrollBodyContent={true}
         >
-          Photo credits to Holly Healy and Emily Tinkey.
-          Credits for the conceptual design of the improved Lake Merritt Gardens goes to Emily Geagan.
+          <p>
+            Photo credits to Holly Healy and Emily Tinkey.
+          </p>
+          <p>
+            Credits for the conceptual design of the improved Lake Merritt Gardens goes to Emily Geagan.
+          </p>
+          <p>
+            This website was created and is maintained by Gorlan Yuen
+          </p>
         </Dialog>
       </div>
     );

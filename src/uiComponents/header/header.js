@@ -14,7 +14,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 let wideHeader = (
   <Tabs className="nav-tabs">
     <Tab className="nav-tab" label="About" href="#About"/>
-    <Tab className="nav-tab" label="Tickets - On Sale Now!" href="#Tickets"/>
+    <Tab className="nav-tab" label="Tickets - On Sale Now!" rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073"/>
     <Tab className="nav-tab" label="Sponsors/Fundraising Goals" href="#Sponsors"/>
   </Tabs>
 );

@@ -20,13 +20,12 @@ class Card3 extends Component {
 
 
   updateSubtext() {
-    let shortTitle = 'How can I buy tickets?';
+    let title = 'How can I buy tickets?';
     if(window.innerWidth < 750) {
-      this.setState({ subtext: shortTitle, title: '' });
+      this.setState({ subtext: title, title: '' });
     } else {
-      let fullTitle = "I'm stoked! How can I buy tickets?";
       let fullSubtext = "Last year's ticketing system was a huge success. We're proud to announce that guests can expect a great ticketing experience again this year.";
-      this.setState({ subtext: fullSubtext, title: fullTitle });
+      this.setState({ subtext: fullSubtext, title: title });
     }
   }
 
