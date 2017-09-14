@@ -66,11 +66,11 @@ class Card1 extends Component {
           </p>
 
           <p>
-            The Autumn Lights Festival, which has become a unique Oakland tradition, expands this year to a festive four-night community event held in the seven-acre oasis of themed gardens nestled in Lakeside Park surrounding Lake Merritt.
+            The Autumn Lights Festival, which has become a unique Oakland tradition, is a festive three-night community event held in the seven-acre oasis of themed gardens nestled in Lakeside Park surrounding Lake Merritt.
           </p>
 
           <p>
-            This festive three-night event is for all ages. It entails a leisurely stroll along paved pathways through seven- acres of lush gardens. The pathways are minimally lit so as not to impede the art, so if you feel you may need a little extra light, feel free to bring a small flashlight. The festival is wheelchair accessible, ADA compliant.
+            This three-night event is for all ages. It entails a leisurely stroll along paved pathways through seven- acres of lush gardens. The pathways are minimally lit so as not to impede the art, so if you feel you may need a little extra light, feel free to bring a small flashlight. The festival is wheelchair accessible, ADA compliant.
           </p>
 
           <p>
