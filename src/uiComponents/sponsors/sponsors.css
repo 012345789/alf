@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+.sponsor .sponsor-description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.5rem;
+}
+
 .sponsor-name {
   height: 15%;
   margin-top: 0;

@@ -10,6 +10,9 @@ class Sponsor extends Component {
   render() {
     return (
       <div className="col-4 sponsor">
+        <p className="sponsor-description">
+          {this.props.description}
+        </p>
         <h4 className="sponsor-name">
           {this.props.type}
         </h4>

@@ -21,15 +21,15 @@ class Sponsors extends Component {
           Sponsors
         </h2>
         <div className="sponsors-container container">
-          <div className="row">
-            <Sponsor type="Spotlight Sponsor" img={nianticLogo} />
+          <div className="row sponsors-row">
+            <Sponsor description="Brought to you by" type="Spotlight Sponsor" img={nianticLogo} />
             <Sponsor type="Festival Sponsor" img={oaklandAsLogo} />
             <Sponsor type="Festival Sponsor" img={cityOfOaklandLogo} />
           </div>
           <h3>
             In Partnership With
           </h3>
-          <div className="row">
+          <div className="row sponsors-row">
             <Sponsor type="" img={oaklandMagazineLogo} />
             <Sponsor type="" img={friendsLogo} />
             <Sponsor type="" img={eastBayExpressLogo} />
@@ -37,7 +37,7 @@ class Sponsors extends Component {
           <h3>
             And
           </h3>
-          <div className="row">
+          <div className="row sponsors-row">
             <div className="col-4"></div>
             <div className="col-4">
               <img className="spon-logo" src={heartOfTheTownLogo} alt="Heart of the Town Events" />
