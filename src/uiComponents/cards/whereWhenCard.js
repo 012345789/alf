@@ -3,10 +3,10 @@ import {Card, CardMedia, CardTitle, Dialog} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import cardImg2 from '../../img/ALF-14-7.jpg';
+import cardImg from '../../img/ALF-14-7.jpg';
 
 
-class Card2 extends Component {
+class WhereWhenCard extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -15,7 +15,7 @@ class Card2 extends Component {
   }
 
   handleClick() {
-    this.props.toggleModal('card2');
+    this.props.toggleModal('whereWhen');
   }
 
   updateSubtext() {
@@ -55,12 +55,12 @@ class Card2 extends Component {
       <div className="modal">
         <Dialog
           title="Autumn Lights Festival is happening in..."
-          open={this.props.state.modal === 'card2'}
+          open={this.props.state.modal === 'whereWhen'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
           autoScrollBodyContent={true}
         >
-          <img className="modal-pic" src={ cardImg2 } alt="Autumn Lights Medley"/>
+          <img className="modal-pic" src={ cardImg } alt="Autumn Lights Medley"/>
           <p>
             The festival takes place at the Gardens of Lake Merritt every year.
           </p>
@@ -78,7 +78,7 @@ class Card2 extends Component {
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <Card className="card-element" onClick={this.handleClick}>
           <CardMedia className="card-media" overlay={ overlay }>
-            <img src={ cardImg2 } alt=""/>
+            <img src={ cardImg } alt=""/>
           </CardMedia>
           { modal }
         </Card>
@@ -87,6 +87,6 @@ class Card2 extends Component {
   }
 }
 
-export default Card2;
+export default WhereWhenCard;
 
 

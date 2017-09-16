@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../cards/cards.css';
 import '../cards/modals.css';
-import '../cards/card3.css';
-import Card1 from '../cards/card1.js';
-import Card2 from '../cards/card2.js';
-import Card3 from '../cards/card3.js';
-import Card4 from '../cards/card4.js';
-import Card5 from '../cards/card5.js';
+import '../cards/ticketsCard.css';
+import WhatCard from '../cards/whatCard.js';
+import WhereWhenCard from '../cards/whereWhenCard.js';
+import TicketsCard from '../cards/ticketsCard.js';
+import FaqCard from '../cards/faqCard.js';
+import TransportationCard from '../cards/transportationCard.js';
 
 class CardsController extends Component {
   constructor(props) {
@@ -17,26 +17,26 @@ class CardsController extends Component {
     return (
       <div>
         <div className="card">
-          <Card1 toggleModal={this.props.toggleModal} state={this.props.state}>
-          </Card1>
+          <WhatCard toggleModal={this.props.toggleModal} state={this.props.state}>
+          </WhatCard>
         </div>
         <div className="card">
-          <Card2 toggleModal={this.props.toggleModal} state={this.props.state}>
-          </Card2>
+          <WhereWhenCard toggleModal={this.props.toggleModal} state={this.props.state}>
+          </WhereWhenCard>
         </div>
         <div id="Tickets" className="card vertical-cards section">
           <div className="vertical-card">
-            <Card3 toggleModal={this.props.toggleModal} state={this.props.state}>
-            </Card3>
+            <TicketsCard toggleModal={this.props.toggleModal} state={this.props.state}>
+            </TicketsCard >
           </div>
           <div className="vertical-card">
-            <Card4 toggleModal={this.props.toggleModal} state={this.props.state}>
-            </Card4>
+            <FaqCard toggleModal={this.props.toggleModal} state={this.props.state}>
+            </FaqCard >
           </div>
         </div>
         <div className="card">
-          <Card5 toggleModal={this.props.toggleModal} state={this.props.state}>
-          </Card5>
+          <TransportationCard toggleModal={this.props.toggleModal} state={this.props.state}>
+          </TransportationCard >
         </div>
       </div>
     );

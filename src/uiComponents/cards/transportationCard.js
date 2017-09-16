@@ -6,7 +6,7 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import cardImg from '../../img/ALF-14-20.jpg';
 
 
-class Card5 extends Component {
+class TransportationCard extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -15,7 +15,7 @@ class Card5 extends Component {
   }
 
   handleClick() {
-    this.props.toggleModal('card5');
+    this.props.toggleModal('transportation');
   }
 
   updateSubtext() {
@@ -54,7 +54,7 @@ class Card5 extends Component {
       <div className="modal">
         <Dialog
           title="Transportation"
-          open={this.props.state.modal === 'card5'}
+          open={this.props.state.modal === 'transportation'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
           autoScrollBodyContent={true}
@@ -105,6 +105,6 @@ class Card5 extends Component {
   }
 }
 
-export default Card5;
+export default TransportationCard ;
 
 
