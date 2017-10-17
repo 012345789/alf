@@ -8,6 +8,7 @@ import friendsLogo from './logos/friends-of-gardens-of-lake-merritt-logo.jpg';
 import eastBayExpressLogo from './logos/EBX.png';
 import oaklandMagazineLogo from './logos/oakland-magazine-logo.jpg';
 import heartOfTheTownLogo from './logos/heart-of-the-town-logo.png';
+import allSponsors from './logos/allSponsors.png';
 
 class Sponsors extends Component {
   constructor(props) {
@@ -17,15 +18,20 @@ class Sponsors extends Component {
   render() {
     return (
       <div id="Sponsors" className="section sponsors">
-        <h2>
-          Sponsors
-        </h2>
+        <h3 className="spon-header">
+          Friends of the Gardens at Lake Merritt are grateful for the contributions of the following sponsors:
+        </h3>
         <div className="sponsors-container container">
+          <img id="contributions" src={allSponsors} alt="contributions"/>
+        {
+        /*
           <div className="row sponsors-row">
             <Sponsor description="Brought to you by" type="Spotlight Sponsor" img={nianticLogo} />
             <Sponsor type="Festival Sponsor" img={oaklandAsLogo} />
             <Sponsor type="Festival Sponsor" img={cityOfOaklandLogo} />
           </div>
+        */
+        }
           <h3>
             In Partnership With
           </h3>

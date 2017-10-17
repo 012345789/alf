@@ -14,8 +14,11 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 let wideHeader = (
   <Tabs className="nav-tabs">
     <Tab className="nav-tab" label="About" href="#About"/>
-    <Tab className="nav-tab" label="Tickets - On Sale Now!" rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073"/>
-    <Tab className="nav-tab" label="Sponsors/Fundraising Goals" href="#Sponsors"/>
+    <Tab className="nav-tab" label="Tickets" rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073"/>
+    <Tab className="nav-tab" label="Featured Artists" rel="noopener noreferrer" target="_blank" href="https://i.imgur.com/glid2Rp.jpg"/>
+    <Tab className="nav-tab" label="Festival Program" href="./alf-program.pdf"/>
+    <Tab className="nav-tab" label="Festival Map" rel="noopener noreferrer" target="_blank" href="https://i.imgur.com/I4TiWSA.jpg"/>
+    <Tab className="nav-tab" label="Sponsors/Fundraising" href="#Sponsors"/>
   </Tabs>
 );
 
@@ -40,7 +43,10 @@ let iconElement = (
     >
       <MenuItem href="#About" primaryText="About"></MenuItem>
       <MenuItem rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073" primaryText="Tickets - On Sale Now!"></MenuItem>
-      <MenuItem href="#Sponsors" primaryText="Sponsors and Fundraising Goals"></MenuItem>
+    <MenuItem rel="noopener noreferrer" target="_blank" href="https://i.imgur.com/glid2Rp.jpg" primaryText="Featured Artists"></MenuItem>
+      <MenuItem href="#" primaryText="Festival Program"></MenuItem>
+      <MenuItem rel="noopener noreferrer" target="_blank" href="https://i.imgur.com/I4TiWSA.jpg" primaryText="Festival Map"></MenuItem>
+      <MenuItem href="#Sponsors" primaryText="Sponsors/Fundraising"></MenuItem>
     </IconMenu>
   </div>
 );
