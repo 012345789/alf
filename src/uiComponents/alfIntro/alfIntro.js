@@ -48,7 +48,7 @@ class AlfIntro extends Component {
               A fundraiser for the Gardens at Lake Merritt
             </div>
             <div id="title-count">
-              6th Annual
+              7th Annual
             </div>
             <div className="title" id="autumn">
               Autumn
@@ -60,7 +60,7 @@ class AlfIntro extends Component {
               Festival
             </div>
             <div id="title-date">
-              October 19 - 21, 2017
+              October 18 - 20, 2018
             </div>
           </div>
         </div>

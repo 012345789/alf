@@ -54,7 +54,7 @@ class Fundraising extends Component {
     let modal = (
       <div className="modal">
         <Dialog
-          title="Fundraising Goals for 2017"
+          title="Fundraising Goals for 2018"
           open={this.props.state.modal === 'fundraising'}
           onRequestClose={this.handleClick}
           contentStyle={modalStyles}
@@ -65,7 +65,7 @@ class Fundraising extends Component {
             Held over three evenings in the night-darkened Gardens at Lake Merritt in Lakeside Park, Autumn Lights Festival is a fundraiser, with an old-school sense of purpose. Over five years’ of festivals, we reached a $200,000 goal.
           </p>
           <p>
-        These funds will finance a new Garden Entry Welcome Plaza in 2017, with lush plantings, energy-efficient lighting, durable and secure fencing, hardscaped sidewalks and containers, drought-tolerant irrigation. These will set off the Gardens’ grand new wrought-iron gates, designed by local artist <a target="_blank" rel="noopener noreferrer" href="http://www.slmetalworks.com/">Shawn Lovell</a> and financed by Oakland’s Measure DD.
+        These funds will finance a new Garden Entry Welcome Plaza in 2018, with lush plantings, energy-efficient lighting, durable and secure fencing, hardscaped sidewalks and containers, drought-tolerant irrigation. These will set off the Gardens’ grand new wrought-iron gates, designed by local artist <a target="_blank" rel="noopener noreferrer" href="http://www.slmetalworks.com/">Shawn Lovell</a> and financed by Oakland’s Measure DD.
           </p>
           <p>
             The tradition now enters its sixth year, with a new fundraising target of $400,000 for a second phase.
