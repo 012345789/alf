@@ -66,10 +66,10 @@ class TicketsCard extends Component {
                 <p>
                   General Admission – $20 adults/$7 youth (advance); $25/$10 event day
                 </p>
-                <p>
-                  Tickets will be available starting September!
-
+                  <p>
+                    Tickets are available now on <a rel="noopener noreferrer" target="_blank" href="https://autumn-lights-festival-2018.eventbrite.com"> EventBrite</a>.
                   {
+                    // Tickets will be available starting September!
                     // Tickets are available online at <a rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073">Eventbrite</a>.
                   }
                 </p>
