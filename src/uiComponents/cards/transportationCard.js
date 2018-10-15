@@ -80,7 +80,7 @@ class TransportationCard extends Component {
                   <strong>Tour Buses</strong> – Autumn Lights is an ideal event for tour groups. Buses are allowed to pull up very close to the main festival entrance for loading/unloading and can park along the roadway nearby while guests are enjoying the festival. To arrange a group visit, please contact Samee Roberts, President, Heart of the Town Events, samee@heartofthetownevents.org or call 510-550- 4804, ext.1.
                 </p>
                 <p>
-                  <strong>  Uber/Lyft/Taxi </strong>– Autumn Lights is tailor made for taking Uber, Lyft or a taxi cab, especially given the limited parking in and around Lakeside Park/Lake Merritt. The festival will designate a special drop off zone near the main festival entrance for Uber, Lyft and taxi cabs.
+        <strong>  Uber/Lyft/Taxi </strong>– The festival has designated a special drop off/pick up zone at the main park entrance on Grand @ Bellevue. From there, it is a short jaunt - about 800 feet - to the festival entrance. For those who need or prefer a lift, a driver/golf cart will be making a continuous loop to/from the drop off zone and the festival main entrance.
                 </p>
                 <p>
                   <strong>  Disabled Parking </strong>– there are designated blue handicapped parking spaces marked near the main festival entrance, in front of the Garden Center. Also, the festival-designated taxi/ride share drop off zone may be used for disabled guest pick/up drop off.
