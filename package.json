@@ -7,8 +7,9 @@
   },
   "dependencies": {
     "material-ui": "^0.18.7",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "npm": "^6.4.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "react-scripts": "1.0.11",
     "react-tap-event-plugin": "^2.0.1"
   },
