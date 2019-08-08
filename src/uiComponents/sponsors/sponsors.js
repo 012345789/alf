@@ -46,7 +46,9 @@ class Sponsors extends Component {
           <div className="row sponsors-row">
             <div className="col-4"></div>
             <div className="col-4">
-              <img className="spon-logo" src={heartOfTheTownLogo} alt="Heart of the Town Events" />
+              <a href="https://www.heartofthetownevents.org/" target="_blank">
+                <img className="spon-logo" src={heartOfTheTownLogo} alt="Heart of the Town Events" />
+              </a>
             </div>
             <div className="col-4"></div>
           </div>

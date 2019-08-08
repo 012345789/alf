@@ -68,9 +68,6 @@ class Footer extends Component {
             <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/gardens_lake_merritt/">
               <i className="fa fa-instagram" aria-hidden="true"></i>
             </a>
-            <a rel="noopener noreferrer" target="_blank" href="https://plus.google.com/+GardensatlakemerrittOrg">
-              <i className="fa fa-google-plus" aria-hidden="true"></i>
-            </a>
           </div>
         </div>
       </MuiThemeProvider>
