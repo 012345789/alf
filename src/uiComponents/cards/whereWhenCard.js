@@ -68,7 +68,7 @@ class WhereWhenCard extends Component {
             Join us for the festivities at 666 Bellevue Ave. Oakland, 94610!
           </p>
           <p>
-            This year's festival will take place from October 18th through October 20st, every night from 6 pm until 11 pm.
+            This year's festival will take place from October 17th through October 19th, every night from 6 pm until 11 pm.
           </p>
         </Dialog>
       </div>

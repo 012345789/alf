@@ -72,7 +72,7 @@ class FaqCard extends Component {
                     Will there be Food &amp; Drink?
                   </p>
                   <p className="faq-answer">
-                    Autumn Lights 2018 will feature a delectable array of locally-made food, beer and wine available for purchase. Last year, our food court was a huge hit and this year it will be expanded with an even broader range of culinary options. Locally-crafted beer, wine and soft drinks will also be available at two conveniently located stations.
+                    Autumn Lights 2019 will feature a delectable array of locally-made food, beer and wine available for purchase. Last year, our food court was a huge hit and this year it will be expanded with an even broader range of culinary options. Locally-crafted beer, wine and soft drinks will also be available at two conveniently located stations.
         The list of food vendors can be found <a href="./ALF18_Food_Vendors.pdf" rel="noopener noreferrer" target="_blank">here</a>.
                   </p>
                   <p className="faq-question">
