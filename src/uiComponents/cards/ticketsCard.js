@@ -4,6 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import cardImg from '../../img/ALF-14-28.jpg';
+import postcardImg from '../../img/postcard-2019-presale.jpg';
 
 
 class TicketsCard extends Component {
@@ -62,12 +63,15 @@ class TicketsCard extends Component {
         >
           <div className="modal-content-container">
             <div className="row">
-              <div className="col-9">
+              <div className="col-3">
+                <img className="modal-vertical-pic" src={ postcardImg } alt="Postcard 2019"/>
+              </div>
+              <div className="col-6">
                 <p>
                   General Admission – $20 adults/$7 youth (advance); $25/$10 event day
                 </p>
                   <p>
-                    Tickets will be available soon on <a rel="noopener noreferrer" target="_blank" href="https://autumn-lights-festival-2018.eventbrite.com"> EventBrite</a>.
+                    Tickets will be available soon on EventBrite.
                   {
                     // Tickets will be available starting September!
                     // Tickets are available online at <a rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073">Eventbrite</a>.
