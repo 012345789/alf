@@ -14,8 +14,9 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 let wideHeader = (
   <Tabs className="nav-tabs">
     <Tab className="nav-tab" label="About" href="#About"/>
-    <Tab className="nav-tab" label="Tickets" href="#Tickets"/>
+    <Tab className="nav-tab" label="Tickets - On Sale Now!" rel="noopener noreferrer" target="_blank" href="https://autumnlights19.eventbrite.com/"/>
     {
+        // <Tab className="nav-tab" label="Tickets" href="#Tickets"/>
         // <Tab className="nav-tab" label="Artists & Map" rel="noopener noreferrer" target="_blank" href="./ALF18_Map_and_Artist_List.pdf"/>
         // <Tab className="nav-tab" label="Festival Program" rel="noopener noreferrer" target="_blank" href="./ALF18_Program_3R1.pdf"/>
     // <Tab className="nav-tab" label="Tickets" rel="noopener noreferrer" target="_blank" href="https://www.eventbrite.com/e/6th-annual-autumn-lights-festival-tickets-37322323073"/>
@@ -48,8 +49,9 @@ let iconElement = (
       menuItemStyle={{paddingTop: '0.7em'}}
     >
       <MenuItem href="#About" primaryText="About"></MenuItem>
-      <MenuItem href="#Tickets" primaryText="Tickets"></MenuItem>
+      <MenuItem rel="noopener noreferrer" target="_blank" href="https://autumnlights19.eventbrite.com/" primaryText="Tickets - On Sale Now!"></MenuItem>
     {
+        // <MenuItem href="#Tickets" primaryText="Tickets"></MenuItem>
         // <MenuItem rel="noopener noreferrer" target="_blank" href="https://autumn-lights-festival-2018.eventbrite.com" primaryText="Tickets - On Sale September 1st"></MenuItem>
     //<MenuItem rel="noopener noreferrer" target="_blank" href="https://i.imgur.com/glid2Rp.jpg" primaryText="Featured Artists"></MenuItem>
     //<MenuItem rel="noopener noreferrer" target="_blank" href="./alf-program.pdf" primaryText="Festival Program"></MenuItem>
