@@ -15,6 +15,7 @@ let wideHeader = (
   <Tabs className="nav-tabs">
     <Tab className="nav-tab" label="About" href="#About"/>
     <Tab className="nav-tab" label="Tickets - On Sale Now!" rel="noopener noreferrer" target="_blank" href="https://autumnlights19.eventbrite.com/"/>
+    <Tab className="nav-tab ext-link" label="Festival Program" rel="noopener noreferrer" target="_blank" href="./ALF19_Program_2R1.pdf"/>
     {
         // <Tab className="nav-tab" label="Tickets" href="#Tickets"/>
         // <Tab className="nav-tab" label="Artists & Map" rel="noopener noreferrer" target="_blank" href="./ALF18_Map_and_Artist_List.pdf"/>
@@ -50,6 +51,7 @@ let iconElement = (
     >
       <MenuItem href="#About" primaryText="About"></MenuItem>
       <MenuItem rel="noopener noreferrer" target="_blank" href="https://autumnlights19.eventbrite.com/" primaryText="Tickets - On Sale Now!"></MenuItem>
+      <MenuItem rel="noopener noreferrer" target="_blank" href="./ALF19_Program_2R1.pdf" primaryText="Festival Program"></MenuItem>
     {
         // <MenuItem href="#Tickets" primaryText="Tickets"></MenuItem>
         // <MenuItem rel="noopener noreferrer" target="_blank" href="https://autumn-lights-festival-2018.eventbrite.com" primaryText="Tickets - On Sale September 1st"></MenuItem>
