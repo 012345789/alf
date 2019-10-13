@@ -8,7 +8,7 @@ import friendsLogo from './logos/friends-of-gardens-of-lake-merritt-logo.jpg';
 import eastBayExpressLogo from './logos/EBX.png';
 import oaklandMagazineLogo from './logos/oakland-magazine-logo.jpg';
 import heartOfTheTownLogo from './logos/heart-of-the-town-logo.png';
-import allSponsors from './logos/allSponsors18.png';
+import allSponsors from './logos/ALF19_sponsors.png';
 
 class Sponsors extends Component {
   constructor(props) {
