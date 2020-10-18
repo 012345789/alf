@@ -9,6 +9,7 @@ import CardsController from './uiComponents/controllers/cardsController.js';
 import Sponsors from './uiComponents/sponsors/sponsors.js';
 import Fundraising from './uiComponents/fundraising/fundraising.js';
 import Footer from './uiComponents/footer/footer.js';
+import NewSiteOverlay from './uiComponents/entryDialog/entryDialog.js';
 
 class App extends Component {
   constructor(props) {
@@ -25,6 +26,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+        <NewSiteOverlay/>
 
         <Header/>
 
